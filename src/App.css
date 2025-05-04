@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin: 0;
+  line-height: 1.1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  justify-items: center;
+  border-radius: 5px;
+  border: 0px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0 5px 3px rgba(186, 177, 218, 0.4);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 64px;
+}
+label {
+  font-size: 1rem;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+}
+.btdelete {
+  background: #f75858;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin: 0 0.5rem;
+}
+.btdelete:hover {
+  background: #ff1a1a;
+}
