@@ -1,55 +1,68 @@
-# React + TypeScript + Vite
+# Add Items React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Esta es una aplicación desarrollada en React que permite a los usuarios agregar, visualizar y gestionar elementos en una lista. Es ideal para aprender y practicar conceptos básicos de React como el manejo del estado, eventos y componentes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- Agregar elementos a una lista.
+- Visualizar los elementos añadidos.
+- Interfaz simple y fácil de usar.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![alt text](image.png)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tecnologías utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Lenguaje:** TypeScript
+- **Framework:** React
+- **Herramientas adicionales:** Vite (para el entorno de desarrollo)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Instalación
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# ReactListEmentsApp
+1. Clona este repositorio:
+  ```bash
+  git clone https://github.com/JampierCaramantin/ReactListEmentsApp.git
+  ```
+2. Navega al directorio del proyecto:
+  ```bash
+  cd ReactListEmentsApp
+
+  ```
+3. Instala las dependencias:
+  ```bash
+  npm install
+  ```
+4. Inicia el servidor de desarrollo:
+  ```bash
+  npm run dev
+  ```
+
+## Uso
+
+1. Abre la aplicación en tu navegador en `http://localhost:3000`.
+2. Usa el formulario para agregar elementos a la lista.
+3. Visualiza los elementos añadidos en tiempo real.
+
+## Contribución
+
+Si deseas contribuir, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama:
+  ```bash
+  git checkout -b feature/nueva-funcionalidad
+  ```
+3. Realiza tus cambios y haz commit:
+  ```bash
+  git commit -m "Añadida nueva funcionalidad"
+  ```
+4. Sube tus cambios:
+  ```bash
+  git push origin feature/nueva-funcionalidad
+  ```
+5. Abre un Pull Request.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
